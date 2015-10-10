@@ -66,7 +66,7 @@ public class AppMain {
 
         String cityName = null;
 
-        if (args[0] == null || !args[0].matches("[a-zA-Z]*")) {
+        if (args.length == 0 || !args[0].matches("[a-zA-Z]*")) {
             System.out.println("Please enter a valid city name");
         } else {
             cityName = args[0];

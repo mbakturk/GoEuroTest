@@ -2,8 +2,8 @@ package com.goeuro.demo;
 
 import com.goeuro.demo.model.Location;
 import com.goeuro.demo.tool.CSVCreator;
-import common.Constants;
-import service.LocationService;
+import com.goeuro.demo.common.Constants;
+import com.goeuro.demo.service.LocationService;
 
 /**
  *

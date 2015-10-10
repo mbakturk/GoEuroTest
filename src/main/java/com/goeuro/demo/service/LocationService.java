@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package com.goeuro.demo.service;
 
 import com.goeuro.demo.model.Location;
 import com.sun.jersey.api.client.Client;
@@ -12,7 +12,7 @@ import com.sun.jersey.api.client.UniformInterfaceException;
 import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
-import common.Constants;
+import com.goeuro.demo.common.Constants;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriBuilder;
 import org.codehaus.jackson.jaxrs.JacksonJsonProvider;

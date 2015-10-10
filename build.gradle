@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'com.goeuro.demo.AppMain'
+}
+
+//create a single Jar with all dependencies
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'GoEuroTest Application',  
+        	'Implementation-Version': '1.0',
+        	'Main-Class': mainClass
+    }
+    
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sun.jersey:jersey-json:1.19'
+    compile 'com.sun.jersey:jersey-client:1.19'
+}

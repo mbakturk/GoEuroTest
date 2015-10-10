@@ -1,14 +1,14 @@
 package com.goeuro.demo;
 
-import com.goeuro.demo.model.Location;
-import com.goeuro.demo.tool.CSVCreator;
 import com.goeuro.demo.common.Constants;
+import com.goeuro.demo.model.Location;
 import com.goeuro.demo.service.LocationService;
+import com.goeuro.demo.tool.CSVCreator;
 
 /**
  *
  * @author Mehmet Burak Aktürk
- * @description Application's main class. All business operation is done here.
+ * @description Application's main class. All business operations are done here.
  *
  */
 public class AppMain {
